@@ -35,12 +35,12 @@ jobs:
       - name: Runs pwd
         run: pwd
 
-      # Testing secrets.
-      - name: Testing secret GUNNAR
-        run: python test_script.py ${{ secrets.GUNNAR }} tjobbo
-        #env: 
-        #  GUNNAR_SECURE: ${{ secrets.GUNNAR }}
-    
+      - shell: bash
+        env:
+          SUPER_SECRET: ${{ secrets.PERSSON }}
+        run: |
+          python test_script.py $SUPER_SECRET
+              
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
