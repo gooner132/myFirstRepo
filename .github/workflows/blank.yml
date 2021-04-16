@@ -36,7 +36,7 @@ jobs:
         run: pwd
 
       # Testing secrets.
-      - name:
+      - name: Testing secret GUNNAR
         run: echo $GUNNAR_SECURE
         env: 
           GUNNAR_SECURE: ${{ secrets.GUNNAR }}
