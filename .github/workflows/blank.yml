@@ -37,14 +37,10 @@ jobs:
 
       # Testing secrets.
       - name: Testing secret GUNNAR
-        run: python test_script.py $GUNNAR_SECURE tjobbo
-        env: 
-          GUNNAR_SECURE: ${{ secrets.GUNNAR }}
+        run: python test_script.py ${{ secrets.GUNNAR }} tjobbo
+        #env: 
+        #  GUNNAR_SECURE: ${{ secrets.GUNNAR }}
     
-      # Testing Python
-      - name: Testing Python
-        run: python test_script.py
-        
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
