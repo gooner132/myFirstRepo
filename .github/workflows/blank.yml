@@ -37,7 +37,7 @@ jobs:
 
       # Testing secrets.
       - name: Testing secret GUNNAR
-        run: python test_script.py $GUNNAR_SECURE
+        run: python test_script.py $GUNNAR_SECURE tjobbo
         env: 
           GUNNAR_SECURE: ${{ secrets.GUNNAR }}
     
