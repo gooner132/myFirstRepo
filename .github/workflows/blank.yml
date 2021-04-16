@@ -34,6 +34,10 @@ jobs:
       # Runs pwd
       - name: Runs pwd
         run: pwd
+
+      # Testing Python
+      - name: Testing Python
+        run: python --help
         
       # Runs a single command using the runners shell
       - name: Run a one-line script
