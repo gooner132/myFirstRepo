@@ -39,7 +39,7 @@ jobs:
         env:
           SUPER_SECRET: ${{ secrets.PERSSON }}
         run: |
-          python test_script.py $SUPER_SECRET
+          python test_script.py $SUPER_SECRET blubble
               
       # Runs a single command using the runners shell
       - name: Run a one-line script
