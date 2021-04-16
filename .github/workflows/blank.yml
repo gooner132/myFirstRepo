@@ -35,6 +35,12 @@ jobs:
       - name: Runs pwd
         run: pwd
 
+      # Testing secrets.
+      - name:
+        run: echo $GUNNAR_SECURE
+        env: 
+          GUNNAR_SECURE: ${{ secrets.GUNNAR }}
+    
       # Testing Python
       - name: Testing Python
         run: python test_script.py
