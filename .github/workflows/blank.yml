@@ -37,7 +37,7 @@ jobs:
 
       # Testing Python
       - name: Testing Python
-        run: python --help
+        run: python test_script.py
         
       # Runs a single command using the runners shell
       - name: Run a one-line script
