@@ -5,7 +5,7 @@ name: gooner_run
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '16 18 * * *'
+    - cron:  '20 18 * * *'
 
 # Controls when the action will run. 
 #on:
