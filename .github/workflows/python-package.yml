@@ -31,12 +31,11 @@ jobs:
       - name: Runs pwd
         run: cd ~; pwd; more .bashrc
 
-      - shell: bash
+      - name: running_gooner_python
+        run: python test_script.py $SUPER_SECRET blubble
         env:
           SUPER_SECRET: ${{ secrets.PERSSON }}
-        run: |
-          python test_script.py $SUPER_SECRET blubble
-              
+             
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo BLA BLA gooner bla bla tjopp
