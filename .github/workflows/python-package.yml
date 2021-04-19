@@ -39,6 +39,6 @@ jobs:
              
       # Testing git --version 
       - name running git --version
-        run: |
-          git --version
+        run: git --version
+        
   
