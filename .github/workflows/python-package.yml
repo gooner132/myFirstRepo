@@ -2,14 +2,19 @@
 
 name: gooner_run
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '16 18 * * *'
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+# Controls when the action will run. 
+#on:
+#  # Triggers the workflow on push or pull request events but only for the main branch
+#  push:
+#    branches: [ main ]
+
+#  # Allows you to run this workflow manually from the Actions tab
+#  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,6 +39,13 @@ jobs:
       - name: testing_git_version
         run: |
           git --version
+
+#      - name: push
+#        uses: github-actions-x/commit@v2.1
+#        with:
+##          github-token: ${{ secrets.GITHUB_TOKEN }}
+#          commit-message: 'Automatic gooner Automatic
+#          rebase: 'true'
           
       - name: running_gooner_python
         run: |
