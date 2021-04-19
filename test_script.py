@@ -2,6 +2,10 @@ import time, sys
 
 print ()
 
+f = open("what.txt", "a")
+f.write("Now the file has more content!")
+f.close()
+
 f = open("what.txt", "r")
 print(f.read())
 
