@@ -9,7 +9,7 @@ new_str = ""
 for i in test_str:
     new_str = new_str + i + "x"
 
-print(new_str)
+print("JJ" + new_str + "KK")
 
 # sleep_time = 3
 # print("Script 'test_script.py is starting !!")
