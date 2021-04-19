@@ -50,11 +50,7 @@ jobs:
      
       - name: push
         run: |
-          git add what.txt; git commit uses: github-actions-x/commit@v2.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Automatic gooner Automatic'
-          rebase: 'true'
+          git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
           
       - name: pushORG
         uses: github-actions-x/commit@v2.1
