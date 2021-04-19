@@ -51,7 +51,8 @@ jobs:
       - name: push
         run: |
           # git config --global user.email "gooner132@hotmail.com"; git config --global user.name "Gunnar Persson"; git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
-          git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main          
+          git config user.email "gooner132@hotmail.com"; git config user.name "Gunnar Persson"; git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
+
 #      - name: pushORG
 #        uses: github-actions-x/commit@v2.1
 #        with:
