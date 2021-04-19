@@ -1,10 +1,4 @@
-import time, sys
 
-print ()
-
-f = open("what.txt", "a")
-f.write("Now the file has more content!")
-f.close()
 
 f = open("what.txt", "r")
 print(f.read())
@@ -17,7 +11,6 @@ print(f.read())
 #
 # print("I'm back!!!", flush=True)
 #
-print('Number of arguments:', len(sys.argv), 'arguments.')
-print('Argument List:', str(sys.argv))
+
 
 # EOF #
