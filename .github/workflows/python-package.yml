@@ -50,7 +50,7 @@ jobs:
      
       - name: push
         run: |
-          git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
+          git config --global user.email "gooner132@hotmail.com"; git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
           
       - name: pushORG
         uses: github-actions-x/commit@v2.1
