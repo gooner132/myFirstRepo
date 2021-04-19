@@ -3,11 +3,9 @@ import time, sys
 print ()
 
 f = open("what.txt", "a")
-f.write("Now the file has more content!")
+f.write(sys.argv[1] + "\n")
 f.close()
 
-f = open("what.txt", "r")
-print(f.read())
 
 # sleep_time = 3
 # print("Script 'test_script.py is starting !!")
