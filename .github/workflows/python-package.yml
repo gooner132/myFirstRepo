@@ -52,10 +52,10 @@ jobs:
         run: |
           git config --global user.email "gooner132@hotmail.com"; git config --global user.name "Gunnar Persson"; git add what.txt; git commit -m 'Automaticccc goonerAutomatic'; git push origin main
           
-      - name: pushORG
-        uses: github-actions-x/commit@v2.1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Automatic gooner Automatic'
-          rebase: 'true'
+#      - name: pushORG
+#        uses: github-actions-x/commit@v2.1
+#        with:
+#          github-token: ${{ secrets.GITHUB_TOKEN }}
+#          commit-message: 'Automatic gooner Automatic'
+#          rebase: 'true'
           
