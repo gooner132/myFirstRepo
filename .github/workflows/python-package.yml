@@ -44,3 +44,4 @@ jobs:
           SUPER_SECRET: ${{ secrets.GUNNAR }}
           - name: Try to run git --version
         run: git --version
+  
