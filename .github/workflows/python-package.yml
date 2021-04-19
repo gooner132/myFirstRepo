@@ -32,7 +32,8 @@ jobs:
         run: cd ~; pwd; more .bashrc
 
       - name: running_gooner_python
-        run: python test_script.py $SUPER_SECRET blubble
+        run: |
+          python test_script.py $SUPER_SECRET blubble
         env:
           SUPER_SECRET: ${{ secrets.PERSSON }}
              
