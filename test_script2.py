@@ -1,7 +1,7 @@
 
 
 f = open("what.txt", "r")
-print(f.read())
+# print(f.read())
 
 test_str = f.read()
 new_str = ""
