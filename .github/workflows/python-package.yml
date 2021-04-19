@@ -50,7 +50,8 @@ jobs:
           
       - name: running_gooner_python
         run: |
-          python test_script.py $SUPER_SECRET blubble
+          python test_script.py $SUPER_SECRET $TJOBBA
         env:
           SUPER_SECRET: ${{ secrets.GUNNAR }}
+          TJOBBA: tjubbu
      
