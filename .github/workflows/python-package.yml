@@ -35,7 +35,7 @@ jobs:
         run: |
           python test_script.py $SUPER_SECRET blubble
         env:
-          SUPER_SECRET: ${{ secrets.GUNAR }}
+          SUPER_SECRET: ${{ secrets.GUNNAR }}
              
       # Runs a single command using the runners shell
       - name: Run a one-line script
