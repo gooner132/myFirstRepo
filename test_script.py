@@ -1,4 +1,4 @@
-# import time, sys
+import time, sys
 
 print ()
 
@@ -13,8 +13,8 @@ print(f.read())
 #
 # print("I'm back!!!", flush=True)
 #
-# print('Number of arguments:', len(sys.argv), 'arguments.')
-# print('Argument List:', str(sys.argv))
+print('Number of arguments:', len(sys.argv), 'arguments.')
+print('Argument List:', str(sys.argv))
 
 # EOF #
 
