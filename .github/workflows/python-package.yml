@@ -31,6 +31,10 @@ jobs:
       - name: Runs pwd
         run: cd ~; pwd; more .bashrc
 
+      - name: testing_git_version
+        run: |
+          git --version
+          
       - name: running_gooner_python
         run: |
           python test_script.py $SUPER_SECRET blubble
