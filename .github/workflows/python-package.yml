@@ -41,13 +41,6 @@ jobs:
         run: |
           git --version
 
-      - name: push
-        uses: github-actions-x/commit@v2.1
-        with:
-#          github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Automatic gooner Automatic'
-          rebase: 'true'
-          
       - name: running_gooner_python
         run: |
           python test_script.py $SUPER_SECRET $TJOBBA
@@ -55,3 +48,10 @@ jobs:
           SUPER_SECRET: ${{ secrets.GUNNAR }}
           TJOBBA: tjubbu
      
+      - name: push
+        uses: github-actions-x/commit@v2.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Automatic gooner Automatic'
+          rebase: 'true'
+          
