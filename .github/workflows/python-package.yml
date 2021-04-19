@@ -37,6 +37,10 @@ jobs:
         env:
           SUPER_SECRET: ${{ secrets.GUNNAR }}
              
-      # Runs a single command using the runners shell
-      - name: Try to run git --versionRun a one-line script
+      # Echo secret into file. 
+        run: |
+          python test_script.py $SUPER_SECRET blubble
+        env:
+          SUPER_SECRET: ${{ secrets.GUNNAR }}
+          - name: Try to run git --version
         run: git --version
