@@ -38,6 +38,7 @@ jobs:
           SUPER_SECRET: ${{ secrets.GUNNAR }}
              
       # Testing git --version 
+      - name running git --version
         run: |
           git --version
   
