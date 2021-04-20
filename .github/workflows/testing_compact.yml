@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: blubbehoj
-      - run: git --version
+        run: git --version
       - run: echo '  tjugonde april idag'
   testing_compact_job2:
     runs-on: ubuntu-latest
