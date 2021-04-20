@@ -3,11 +3,11 @@
 
 name: gooner_runnn
 
-# on: [workflow_dispatch, pull_request]
-on: 
-  pull_request:
-    branches:
-      - main
+on: [workflow_dispatch, pull_request]
+# on: 
+#   pull_request:
+#     branches:
+#       - main
 
 # Controls when the action will run. 
 # on:
@@ -25,6 +25,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: "Hello world when it's Monday"
+        if: ${{ env.DAY_OF_WEEK == 'Mon' }}
+        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
+        env:
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
