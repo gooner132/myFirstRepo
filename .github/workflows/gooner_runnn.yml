@@ -22,7 +22,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    env:
+      DAY_OF_WEEK: Mon
+      
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -32,6 +34,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!; echo $GITHUB_WORKSPACE
 
+      - name: "Hello world when it's Monday"
+        if: ${{ env.DAY_OF_WEEK == 'Mon' }}
+        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
+        env:
+          FIRST_NAME: Mona
+          middle_name: The
+          Last_Name: Octocat
+          
       - name: setting what.txt
         run: |
           python test_script.py $SUPER_SECRET $TJOBBA
