@@ -1,8 +1,0 @@
-
-Hej hopp.
-Bla bla.
- Detta är min första incheckade fil i repo gooner132/myFirstRepo.
-Bla lba
-
-joså jos
-# EOF #
