@@ -28,14 +28,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: "Hello world when it's Monday"
-        if: ${{ env.DAY_OF_WEEK == 'Mon' }}
-        run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
-        env:
-          FIRST_NAME: Mona
-          middle_name: The
-          Last_Name: Octocat
-
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!; echo $GITHUB_WORKSPACE
