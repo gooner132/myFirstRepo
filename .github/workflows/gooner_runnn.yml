@@ -27,13 +27,6 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!; echo $GITHUB_WORKSPACE
 
-      # Runs pwd
-      - name: Runs pwd
-        run: cd ~; pwd; more .bashrc
-
-      - name: testing_git_version
-        run: |
-          git --version
       - name: setting what.txt
         run: |
           python test_script.py $SUPER_SECRET $TJOBBA
