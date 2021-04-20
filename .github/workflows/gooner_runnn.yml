@@ -3,7 +3,8 @@
 
 name: gooner_runnn
 
-on: [workflow_dispatch, pull_request]
+# on: [workflow_dispatch, pull_request]
+on: pull_request
 
 # Controls when the action will run. 
 # on:
