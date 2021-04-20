@@ -5,10 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: blubbehoj
       - run: git --version
       - run: echo '  tjugonde april idag'
   testing_compact_job2:
     runs-on: ubuntu-latest
     steps:
-    - run: echo '      running testing_job2'
+      - run: echo '      running testing_job2'
      
