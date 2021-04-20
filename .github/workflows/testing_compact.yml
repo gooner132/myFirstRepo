@@ -1,0 +1,10 @@
+name: testing_compact
+on: workflow_dispatch
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: git --version
+      - run: echo '  tjugonde april idag'
+     
