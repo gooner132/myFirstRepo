@@ -42,6 +42,10 @@ jobs:
           middle_name: The
           Last_Name: Octocat
           
+      - name: "Hello world when it's NOT Monday"
+        if: ${{ env.DAY_OF_WEEK != 'Mon' }}
+        run: echo " not mond pucko!"
+          
       - name: setting what.txt
         run: |
           python test_script.py $SUPER_SECRET $TJOBBA
