@@ -1,10 +1,14 @@
 name: testing_compact
 on: workflow_dispatch
 jobs:
-  check-bats-version:
+  testing_compact_job1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: git --version
       - run: echo '  tjugonde april idag'
+  testing_compact_job2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo '      running testing_job2'
      
