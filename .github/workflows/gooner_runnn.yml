@@ -58,7 +58,7 @@ jobs:
           
       - name: setting what.txt
         run: |
-          python test_script.py $github_tokken $TJOBBA
+          python test_script.py $SUPER_SECRET $TJOBBA
         env:
           github_tokken: ${{ secrets.GITHUB_TOKEN }}
           SUPER_SECRET: ${{ secrets.GUNNAR }}
